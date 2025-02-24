@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Django stuff:
+*.log
+db.sqlite3
+db.sqlite3-journal
+/media/
+*.pyc
+.DS_Store
+*.swp
+
+# Migrations (optional, but you usually commit these)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Ignore secret settings
+.env
+*.env
+config/settings/local.py  # If using custom settings structure
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+*.cover
+
+# Ignore static and media files
+staticfiles/
+media/
+
+# Ignore compiled translations
+*.mo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore VSCode settings (if using VSCode)
+.vscode/
+
+# Ignore JetBrains IDEs (PyCharm, IntelliJ)
+.idea/
+
+# Ignore Node.js dependencies (if using React or Vue in frontend)
+node_modules/
+npm-debug.log
+
+# Ignore Docker files (if using Docker)
+*.pid
+*.log
+docker-compose.override.yml
+
+# Ignore compiled C extensions
+*.so
+
+# Ignore AWS and deployment files (optional)
+.aws/
