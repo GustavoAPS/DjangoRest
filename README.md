@@ -11,64 +11,43 @@ This repository is for studying and practicing Django REST Framework (DRF) conce
 
 ## Project Setup (Virtual Environment)
 
-1.  **Clone the repository:**
-
-    ```bash
-    git clone <repository_url>
-    cd <repository_name>
-    ```
-
-2.  **Navigate to the backend directory:**
-
-    ```bash
-    cd backend
-    ```
-
-3.  **Create a virtual environment:**
+1.  **Create a virtual environment:**
 
     ```bash
     python -m venv venv
     ```
 
-4.  **Activate the virtual environment:**
+2.  **Activate the virtual environment:**
 
-    * **On macOS and Linux:**
-
-        ```bash
+    ```bash
         source venv/bin/activate
-        ```
+    ```
 
-    * **On Windows:**
-
-        ```bash
-        venv\Scripts\activate
-        ```
-
-5.  **Install dependencies:**
+4.  **Install dependencies:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-6.  **Run migrations:**
+5.  **Run migrations:**
 
     ```bash
     python manage.py migrate
     ```
 
-7.  **Create a superuser (optional):**
+6.  **Create a superuser (optional):**
 
     ```bash
     python manage.py createsuperuser
     ```
 
-8.  **Run the development server:**
+7.  **Run the development server:**
 
     ```bash
     python manage.py runserver
     ```
 
-9.  **Access the API:**
+8.  **Access the API:**
 
     * The API will be available at `http://127.0.0.1:8000/`.
 
