@@ -25,31 +25,45 @@ This repository is for studying and practicing Django REST Framework (DRF) conce
 
 4.  **Install dependencies:**
 
+    If there is a requirements.txt file:
+    
     ```bash
-    pip install -r requirements.txt
+        pip install -r requirements.txt
+    ```
+    Else:
+    
+    ```bash
+        pip install django
+        pip install djangorestframework
+        pip freeze > requirements.txt
     ```
 
-5.  **Run migrations:**
+6.  **Run migrations:**
+
+    If there are migration files:
 
     ```bash
     python manage.py migrate
     ```
 
-6.  **Create a superuser (optional):**
+    Else:
+
+    ```bash
+        python manage.py makemigrations
+        python manage.py migrate
+    ```
+
+8.  **Create a superuser (optional):**
 
     ```bash
     python manage.py createsuperuser
     ```
 
-7.  **Run the development server:**
+9.  **Run the development server:**
 
     ```bash
-    python manage.py runserver
+        python manage.py runserver
     ```
-
-8.  **Access the API:**
-
-    * The API will be available at `http://127.0.0.1:8000/`.
 
 ## Common DRF Concepts
 
