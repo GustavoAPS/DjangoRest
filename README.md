@@ -88,43 +88,29 @@ This repository is for studying and practicing Django REST Framework (DRF) conce
 * **Pagination:**
     * Divide large result sets into smaller, manageable pages.
 
+
 ## Useful Commands (Django)
 
-* **Run migrations:**
+| Command | Description |
+|---------|-------------|
+| `django-admin startproject project_name`                | Creates a new Django project |
+| `python manage.py startapp app_name`                    | Creates a new Django app |
+| `python manage.py runserver`                            | Starts the development server (default: 127.0.0.1:8000) |
+| `python manage.py makemigrations`                       | Creates migration files based on model changes |
+| `python manage.py migrate`                              | Applies migrations to the database |
+| `python manage.py createsuperuser`                      | Creates an admin superuser account |
+| `python manage.py shell`                                | Opens an interactive Python shell with Django settings loaded |
+| `python manage.py collectstatic`                        | Collects static files for deployment |
+| `python manage.py test`                                 | Runs Django unit tests |
+| `python manage.py check`                                | Checks for common issues in the project |
+| `python manage.py showmigrations`                       | Lists all migrations and their status |
+| `python manage.py sqlmigrate app_name migration_number` | Shows the SQL commands for a migration |
+| `python manage.py flush`                                | Deletes all data from the database (keeps migrations) |
+| `python manage.py dumpdata app_name.Model --format=json`| Exports data from a model to JSON |
+| `python manage.py loaddata data.json`                   | Loads data from a JSON file into the database |
+| `python manage.py changepassword username`              | Changes a user's password |
+| `django-admin help`                                     | Displays help for available commands |
 
-    ```bash
-    python manage.py migrate
-    ```
-
-* **Create a superuser:**
-
-    ```bash
-    python manage.py createsuperuser
-    ```
-
-* **Run the development server:**
-
-    ```bash
-    python manage.py runserver
-    ```
-
-* **Create a new Django app:**
-
-    ```bash
-    python manage.py startapp <app_name>
-    ```
-
-* **Run tests:**
-
-    ```bash
-    python manage.py test
-    ```
-
-* **Make migrations:**
-
-    ```bash
-    python manage.py makemigrations
-    ```
 
 ## Troubleshooting
 
