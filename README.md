@@ -111,6 +111,27 @@ This repository is for studying and practicing Django REST Framework (DRF) conce
 | `python manage.py changepassword username`              | Changes a user's password |
 | `django-admin help`                                     | Displays help for available commands |
 
+## Naming Conventions
+
+| **Component**                 | **Naming Convention**                                                      | **Example**                          |
+|-------------------------------|-----------------------------------------------------------------------------|--------------------------------------|
+| **Project Name**               | Lowercase with underscores                                                  | `my_project`                         |
+| **App Names**                  | Lowercase with underscores                                                  | `blog`, `user_profiles`, `shop`      |
+| **Model Names**                | Singular, Capitalized, CamelCase                                            | `Post`, `Category`, `UserProfile`    |
+| **Field Names**                | Lowercase with underscores                                                  | `title`, `date_created`, `user_profile` |
+| **Foreign Keys / Related Names** | Lowercase model name for ForeignKey, use `related_name` for reverse lookup | `author`, `category`, `posts`        |
+| **View Names (FBV)**           | Lowercase with underscores                                                  | `home_view`, `post_detail`           |
+| **View Names (CBV)**           | Capitalized, CamelCase                                                     | `PostDetailView`, `UserProfileCreateView` |
+| **Template Names**             | Lowercase with underscores, app-specific directories                        | `blog/post_list.html`, `user_profiles/user_form.html` |
+| **URL Pattern Names**          | Lowercase with underscores                                                  | `home`, `post_detail`                |
+| **Static Files**               | Organize by type (css, js, images)                                          | `static/css/style.css`, `static/js/main.js` |
+| **Media Files**                | Organize with `MEDIA_ROOT` setting for uploads                               | `media/uploads/profile_picture.jpg`  |
+| **Manager and Queryset Methods** | Lowercase form of model name, followed by `_manager`                       | `Post.objects.all_posts()`           |
+| **Custom Template Tags/Filters** | Lowercase with underscores, inside `templatetags` directory                | `my_app/templatetags/custom_tags.py`, `my_app/templatetags/custom_filters.py` |
+| **Form and Serializer Names**  | Singular, Capitalized                                                       | `PostForm`, `UserProfileSerializer`  |
+| **Test Names**                 | Use `test_` prefix for test methods and test files                          | `test_views.py`, `test_models.py`, `test_user_registration` |
+| **Constants**                  | Uppercase with underscores                                                  | `MAX_USERS`, `DEFAULT_PAGE_SIZE`     |
+
 
 ## Troubleshooting
 
