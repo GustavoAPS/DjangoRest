@@ -7,6 +7,7 @@ This repository is for studying and practicing Django REST Framework (DRF) conce
 * Project Setup (Virtual Environment)
 * Common DRF Concepts
 * Useful Commands (Django)
+* [Models](references/models.md)
 * Troubleshooting
 
 ## Project Setup (Virtual Environment)
