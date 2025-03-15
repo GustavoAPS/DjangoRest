@@ -150,3 +150,15 @@ This repository is for studying and practicing Django REST Framework (DRF) conce
     * If you have a migration conflict, you may need to resolve it manually.
 * **Port conflicts:**
     * If port 8000 is already in use, specify a different port when running the development server: `python manage.py runserver 8080`.
+
+
+
+Links:
+
+Authentication:<br>
+- https://www.turing.com/kb/django-rest-framework-authentication
+
+Viewsets:<br>
+- https://www.django-rest-framework.org/api-guide/viewsets/#:~:text=Django%20REST%20framework%20allows%20you,single%20class%2C%20called%20a%20ViewSet%20.
+
+- https://medium.com/@ukemeboswilson/understanding-and-implementing-views-in-django-rest-framework-2184eceb7336
